@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <title>WebGL</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
+    <h2 class="heading-title">WebGL: kolorowy sześcian</h2>
+</head>
+
+<body onload="runWebGL()">
+
+<div class="rotate-buttons-block">
+    <label class="label-choose-rotate">WYBÓR ROTACJI:</label>
+    <form class="rotate-buttons-form">
+        <label for="rotateX"></label><input type="checkbox" id="rotateX"> X
+        <label for="rotateY"></label><input type="checkbox" id="rotateY"> Y
+        <label for="rotateZ"></label><input type="checkbox" id="rotateZ"> Z
+    </form>
+</div>
+
+<canvas id="glcanvas">
+    Brak wsparcia dla elementu HTML5 typu canvas
+</canvas>
+
+<div class="buttons-block">
+    <div>
+        <button class="run-button" onclick="runWebGL()">Uruchom</button>
+        <button class="pause-button" onclick="pauseAnimation()">Pauza</button>
+    </div>
+    <div class="pages-buttons">
+        <button class="first-page-button" onclick="window.location.href='textured_cube.html'">Oteksturowany sześcian</button>
+    </div>
+</div>
+
+<script src="../js/colored_cube.js"></script>
+<script src="../js/matrix.js"></script>
+</body>
+
+</html>
