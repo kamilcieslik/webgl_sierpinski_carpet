@@ -6,14 +6,14 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
-    <h2 class="heading-title">WebGL: oteksturowany sześcian</h2>
 </head>
 
 <body onload="runWebGL()">
+<h2 class="heading-title">WebGL: oteksturowany sześcian</h2>
 
-<div class="rotate-buttons-block">
+<div class="configuration-block">
     <div>
-        <label class="label-choose-rotate">WYBÓR ROTACJI:</label>
+        <label class="standard-label">WYBÓR ROTACJI:</label>
         <form class="rotate-buttons-form">
             <label for="rotateX"></label><input type="checkbox" id="rotateX"> X
             <label for="rotateY"></label><input type="checkbox" id="rotateY"> Y
@@ -21,7 +21,7 @@
         </form>
     </div>
     <div>
-        <label class="label-choose-rotate">WYBÓR TEKSTURY:</label>
+        <label class="standard-label">WYBÓR TEKSTURY:</label>
         <form class="rotate-buttons-form">
             <label for="texture1"></label><input type="radio" name="texture-radio" id="texture1"> 1
             <label for="texture2"></label><input type="radio" name="texture-radio" id="texture2"> 2
@@ -36,11 +36,14 @@
 
 <div class="buttons-block">
     <div>
-        <button class="run-button" onclick="runWebGL()">Uruchom</button>
-        <button class="pause-button" onclick="pauseAnimation()">Pauza</button>
+        <button class="figure-button" onclick="runWebGL()">Uruchom</button>
+        <button class="figure-button" onclick="pauseAnimation()">Pauza</button>
+        <button class="figure-button" onclick="startedPosition()">Stop</button>
     </div>
     <div class="pages-buttons">
-        <button class="first-page-button" onclick="window.location.href='colored_cube.html'">Kolorowy sześcian</button>
+        <button class="page-button" onclick="window.location.href='colored_cube.html'">Kolorowy sześcian</button>
+        <button class="page-button" onclick="window.location.href='colored_pyramid.html'">Kolorowy ostrosłup</button>
+        <button class="page-button" onclick="window.location.href='sierpinski_carpet.html'">Dywan Sierpińskiego 2D</button>
     </div>
 </div>
 

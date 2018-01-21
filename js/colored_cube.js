@@ -22,6 +22,7 @@ var X, Y, Z;
 
 // Funkcja główna.
 function runWebGL() {
+    pause_animation=false;
     getRotation();
     gl_canvas = document.getElementById("glcanvas");
     gl_ctx = gl_getContext(gl_canvas);
@@ -32,7 +33,6 @@ function runWebGL() {
 }
 
 // Osie obrotu.
-
 function getRotation() {
     X = document.getElementById('rotateX').checked;
     Y = document.getElementById('rotateY').checked;
@@ -41,6 +41,13 @@ function getRotation() {
 
 function pauseAnimation() {
     pause_animation = !pause_animation;
+}
+
+function startedPosition() {
+    X = document.getElementById('rotateX').checked = false;
+    Y = document.getElementById('rotateY').checked = false;
+    Z = document.getElementById('rotateZ').checked = false;
+    runWebGL();
 }
 
 // Pobranie kontekstu WebGL.

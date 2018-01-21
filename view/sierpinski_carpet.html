@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <title>WebGL</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
+</head>
+
+<body onload="runWebGL()">
+<h2 class="heading-title">WebGL: Dywan Sierpińskiego 2D</h2>
+
+<div class="configuration-block">
+    <div>
+        <label class="standard-label">WYBÓR ROTACJI:</label>
+        <form class="rotate-buttons-form">
+            <label for="rotateX"></label><input type="checkbox" id="rotateX"> X
+            <label for="rotateY"></label><input type="checkbox" id="rotateY"> Y
+            <label for="rotateZ"></label><input type="checkbox" id="rotateZ"> Z
+        </form>
+    </div>
+
+    <label class="standard-label" for="scaleRange">ROZMIAR:</label><input type="range" min="100" max="400"
+                                                                          value="400" class="slider"
+                                                                          oninput="changeScale()" id="scaleRange">
+
+    <label class="standard-label" for="deformationRange">STOPIEŃ DEFORMACJI:</label><input type="range" min="0"
+                                                                                     max="5000" value="0"
+                                                                                     class="slider"
+                                                                                     oninput="changeDeformation()"
+                                                                                     id="deformationRange">
+    <label class="standard-label"> POZIOM REKURENCJI:
+        <select class="combo-box" id="recursion-level" oninput="changeRecursion()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3 selected>3</option>
+            <option value=4>4</option>
+        </select>
+    </label>
+
+</div>
+
+<canvas id="glcanvas">
+    Brak wsparcia dla elementu HTML5 typu canvas
+</canvas>
+
+<div class="buttons-block">
+    <div>
+        <button class="figure-button" onclick="runWebGL()">Uruchom</button>
+        <button class="figure-button" onclick="pauseAnimation()">Pauza</button>
+        <button class="figure-button" onclick="startedPosition()">Stop</button>
+    </div>
+    <div class="pages-buttons">
+        <button class="page-button" onclick="window.location.href='colored_cube.html'">Kolorowy sześcian</button>
+        <button class="page-button" onclick="window.location.href='textured_cube.html'">Oteksturowany sześcian</button>
+        <button class="page-button" onclick="window.location.href='colored_pyramid.html'">Kolorowy ostrosłup</button>
+    </div>
+</div>
+
+<script src="../js/sierpinski_carpet.js"></script>
+<script src="../js/matrix.js"></script>
+</body>
+
+</html>
