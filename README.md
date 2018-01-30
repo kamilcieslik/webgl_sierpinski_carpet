@@ -25,29 +25,29 @@ Aplikacja internetowej renderująca grafikę 2D oraz 3D przy użyciu skryptów J
 1. Dwuwymiarowy Dywan Sierpińskiego w początkowym statycznym położeniu
 </p>
 <p align="center">
-<img height="600" width="700" src="https://image.ibb.co/e9UtW6/1.png" />
+<img height="580" width="650" src="https://image.ibb.co/e9UtW6/1.png" />
 </p>
 <p align="center">
 2. Dwuwymiarowy Dywan Sierpińskiego w początkowym statycznym położeniu po zmianie stopnia samopodobieństwa oraz stopnia deformacji
 </p>
 <p align="center">
-<img height="600" width="700" src="https://image.ibb.co/juCDW6/2.png" />
+<img height="580" width="650" src="https://image.ibb.co/juCDW6/2.png" />
 </p>
 <p align="center">
 3. Dwuwymiarowy Dywan Sierpińskiego wprawiony w ruch wg osi x, y oraz z po zmianie stopnia samopodobieństwa oraz stopnia deformacji
 </p>
 <p align="center">
-<img height="600" width="700" src="https://image.ibb.co/nP5p4R/3.png" />
+<img height="580" width="650" src="https://image.ibb.co/nP5p4R/3.png" />
 </p>
 <p align="center">
 4. Oteksturowany otwarty sześcian wprawiony w ruch wg osi x, y oraz z
 </p>
 <p align="center">
-<img height="600" width="700" src="https://image.ibb.co/h8Vdym/4.png" />
+<img height="580" width="650" src="https://image.ibb.co/h8Vdym/4.png" />
 </p>
 <p align="center">
 5. Model ostrosłupa w początkowym statycznym położeniu
 </p>
 <p align="center">
-<img height="600" width="700" src="https://image.ibb.co/gkEGjR/5.png" />
+<img height="580" width="650" src="https://image.ibb.co/gkEGjR/5.png" />
 </p>
